@@ -1,0 +1,10 @@
+<hibernate-mapping>
+	<class name="com.patanjali.domain.Movie">
+		<id name="id" column="ID">
+			<generator-class name="native" />
+		</id>
+		<property name="title" column="TITLE" />
+		<property name="director" column="director" />
+		<property name="synopsys" column="synopsys" />
+	</class>
+</hibernate-mapping>
