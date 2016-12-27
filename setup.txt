@@ -1,0 +1,3 @@
+install mysql server and start the server
+create a schema 
+create table movies with id as auto increment and other coloumns
