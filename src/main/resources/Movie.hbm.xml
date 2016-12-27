@@ -1,10 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.patanjali.domain.Movie">
+	<class name="com.patanjali.domain.Movie" table="MOVIES">
 		<id name="id" column="ID">
-			<generator-class name="native" />
+			<generator class="native" />
 		</id>
 		<property name="title" column="TITLE" />
-		<property name="director" column="director" />
-		<property name="synopsys" column="synopsys" />
+		<property name="director" column="DIRECTOR" />
+		<property name="synopsys" column="SYNOPSYS" />
 	</class>
 </hibernate-mapping>

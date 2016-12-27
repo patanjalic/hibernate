@@ -8,10 +8,6 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 import com.patanjali.domain.Movie;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
 	private SessionFactory sessionFactory=null;
@@ -34,10 +30,10 @@ public class App
     	App app = new App();
     	app.initSessionFactory();
     	Movie movie = new Movie();
+    	movie.setId(1);
     	movie.setDirector("zack snyder");
     	movie.setSynopsys("movie about batman vs superman and wonder woman");
     	movie.setTitle("batman vs superman");
 		app.persistMovie(movie );
-        System.out.println( "Hello World!" );
     }
 }
