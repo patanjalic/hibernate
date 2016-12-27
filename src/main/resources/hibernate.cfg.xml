@@ -20,6 +20,7 @@
 			org.hibernate.dialect.MySQL5Dialect
 		</property>
 		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="show_sql">true</property>
 		<mapping resource="Movie.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>
